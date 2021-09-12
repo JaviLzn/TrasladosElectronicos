@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="ACME" description="La organización ACME es un ejemplo de una jerarquía típica. Puede ser utilizado para el desarrollo.">
+  <customUserInfoDefinitions/>
   <users>
     <user userName="william.jobs">
       <firstName>William</firstName>
@@ -584,6 +585,12 @@
     <group name="services" parentPath="/acme/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
+    </group>
+    <group name="viceCliOpe">
+      <displayName>Vicepresidencia de clientes y operaciones</displayName>
+    </group>
+    <group name="DirCliOpe" parentPath="/viceCliOpe">
+      <displayName>Dirección de Clientes y Operaciones</displayName>
     </group>
   </groups>
   <memberships>
