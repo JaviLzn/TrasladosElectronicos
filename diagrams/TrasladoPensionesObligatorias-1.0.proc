@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_DdfOoBNuEeytM5_lJyh0oQ" name="TrasladoPensionesObligatorias" author="Javier Lozano" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_DdfOoRNuEeytM5_lJyh0oQ" name="Traslado de Pensiones Obligatorias">
-      <elements xmi:type="process:Lane" xmi:id="_DdfOohNuEeytM5_lJyh0oQ" name="Dirección Comercial PO" actor="_f-JywBNuEeytM5_lJyh0oQ">
+      <elements xmi:type="process:Lane" xmi:id="_DdfOohNuEeytM5_lJyh0oQ" name="Dirección Comercial PO" actor="_DdfOuxNuEeytM5_lJyh0oQ">
         <elements xmi:type="process:StartEvent" xmi:id="_DdfOoxNuEeytM5_lJyh0oQ" name="Listado de prospectos" outgoing="_DdfOuBNuEeytM5_lJyh0oQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_DdfOpBNuEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_DdfOpRNuEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
@@ -26,8 +26,8 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_JE4fgxNvEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_DdfOtBNuEeytM5_lJyh0oQ" type="NONE">
-        <targetForm xmi:type="expression:Expression" xmi:id="_DdfOtRNuEeytM5_lJyh0oQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_DdfOtBNuEeytM5_lJyh0oQ">
+        <targetForm xmi:type="expression:Expression" xmi:id="_RB7yABPlEeytM5_lJyh0oQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_DdfOthNuEeytM5_lJyh0oQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_DdfOtxNuEeytM5_lJyh0oQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -40,8 +40,8 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_eMgdQBPiEeytM5_lJyh0oQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_eMgdQRPiEeytM5_lJyh0oQ" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_DdfOuxNuEeytM5_lJyh0oQ" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor"/>
-      <actors xmi:type="process:Actor" xmi:id="_f-JywBNuEeytM5_lJyh0oQ" documentation="Dirección de Clientes y Operaciones" name="DirCliOpe" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_DdfOuxNuEeytM5_lJyh0oQ" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_f-JywBNuEeytM5_lJyh0oQ" documentation="Dirección de Clientes y Operaciones" name="DirCliOpe"/>
       <contract xmi:type="process:Contract" xmi:id="_DdfOvBNuEeytM5_lJyh0oQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_DdfOvRNuEeytM5_lJyh0oQ">
         <name xmi:type="expression:Expression" xmi:id="_DdfOvhNuEeytM5_lJyh0oQ" content="" returnTypeFixed="true"/>
