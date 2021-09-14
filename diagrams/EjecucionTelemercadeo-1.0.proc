@@ -2,8 +2,8 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_01L2IBPpEeytM5_lJyh0oQ" name="EjecucionTelemercadeo" author="Javier Lozano" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_01L2IRPpEeytM5_lJyh0oQ" name="Ejecución de telemercadeo">
-      <elements xmi:type="process:Lane" xmi:id="_01L2IhPpEeytM5_lJyh0oQ" name="Empleado (lane) " actor="_01L2OxPpEeytM5_lJyh0oQ">
-        <elements xmi:type="process:StartEvent" xmi:id="_01L2IxPpEeytM5_lJyh0oQ" name="Inicio1" outgoing="_01L2OBPpEeytM5_lJyh0oQ">
+      <elements xmi:type="process:Lane" xmi:id="_01L2IhPpEeytM5_lJyh0oQ" name="Asesor Comercial" actor="_01L2OxPpEeytM5_lJyh0oQ">
+        <elements xmi:type="process:StartEvent" xmi:id="_01L2IxPpEeytM5_lJyh0oQ" name="Agenda Comercial" outgoing="_01L2OBPpEeytM5_lJyh0oQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_01L2JBPpEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_01L2JRPpEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_01L2JhPpEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
@@ -91,7 +91,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_01L2YBPpEeytM5_lJyh0oQ" type="5024">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_01L2YRPpEeytM5_lJyh0oQ" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_01L2YhPpEeytM5_lJyh0oQ" x="60" y="68"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_01L2YhPpEeytM5_lJyh0oQ" x="80" y="122"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_7dQWUBPpEeytM5_lJyh0oQ" type="3003" element="_7dME4BPpEeytM5_lJyh0oQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_7dQWUhPpEeytM5_lJyh0oQ" type="5025">
