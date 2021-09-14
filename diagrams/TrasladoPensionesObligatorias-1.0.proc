@@ -17,6 +17,11 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_14KzBhNuEeytM5_lJyh0oQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_14KzCBNuEeytM5_lJyh0oQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_14KzBxNuEeytM5_lJyh0oQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_tvZXIBUFEeybM7SAJDSYyw" subprocessTarget="agendaHeaderAEC" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_tvZ-MBUFEeybM7SAJDSYyw" name="agendaHeaderTPO" content="agendaHeaderTPO" type="TYPE_VARIABLE" returnType="com.company.model.AgendaHeader">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_unigEBUFEeybM7SAJDSYyw" name="agendaHeaderTPO" dataType="_Ddf1vhNuEeytM5_lJyh0oQ" className="com.company.model.AgendaHeader"/>
+            </processSource>
+          </inputMappings>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_14LaEBNuEeytM5_lJyh0oQ" name="Agendar Equipo Comercial" content="Agendar Equipo Comercial" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_14KzAxNuEeytM5_lJyh0oQ" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -38,13 +43,13 @@
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_RvGkkBPmEeytM5_lJyh0oQ" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_kx1uoBT3Eeye1uC26c-a2g" name="agendaHeader" dataType="_Ddf1vhNuEeytM5_lJyh0oQ" className="com.company.model.AgendaHeader">
+      <data xmi:type="process:BusinessObjectData" xmi:id="_kx1uoBT3Eeye1uC26c-a2g" name="agendaHeaderTPO" dataType="_Ddf1vhNuEeytM5_lJyh0oQ" className="com.company.model.AgendaHeader">
         <defaultValue xmi:type="expression:Expression" xmi:id="_aZ2VMBT5EeymjvkMDqTZ5g" name="initAgendaHeader()" content="def agendaHeaderVar = new com.company.model.AgendaHeader()&#xD;&#xA;agendaHeaderVar.agendaHeader = agendaHeaderInput?.agendaHeader&#xD;&#xA;agendaHeaderVar.agendaDetalle = {&#xD;&#xA;&#x9;def agendaDetalleList = []&#xD;&#xA;&#x9;//For each item collected in multiple input&#xD;&#xA;&#x9;agendaHeaderInput?.agendaDetalle.each{&#xD;&#xA;&#x9;&#x9;//Add a new composed AgendaDetalle instance&#xD;&#xA;&#x9;&#x9;agendaDetalleList.add({ currentAgendaDetalleInput ->&#xD;&#xA;&#x9;&#x9;&#x9;def agendaDetalleVar = new com.company.model.AgendaDetalle()&#xD;&#xA;&#x9;&#x9;&#x9;agendaDetalleVar.agendaComercialId = currentAgendaDetalleInput.agendaComercialId&#xD;&#xA;&#x9;&#x9;&#x9;agendaDetalleVar.numeroCuenta = currentAgendaDetalleInput.numeroCuenta&#xD;&#xA;&#x9;&#x9;&#x9;agendaDetalleVar.nombre = currentAgendaDetalleInput.nombre&#xD;&#xA;&#x9;&#x9;&#x9;agendaDetalleVar.apellido = currentAgendaDetalleInput.apellido&#xD;&#xA;&#x9;&#x9;&#x9;return agendaDetalleVar&#xD;&#xA;&#x9;&#x9;}(it))&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return agendaDetalleList}()&#xD;&#xA;return agendaHeaderVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.AgendaHeader">
           <referencedElements xmi:type="process:ContractInput" xmi:id="_aZ2VMRT5EeymjvkMDqTZ5g" name="agendaHeaderInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_DdfOtBNuEeytM5_lJyh0oQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_aGowMBT3Eeye1uC26c-a2g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_E3de4BUGEeybM7SAJDSYyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_DdfOthNuEeytM5_lJyh0oQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_DdfOtxNuEeytM5_lJyh0oQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -63,7 +68,7 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_DdfOuxNuEeytM5_lJyh0oQ" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_DdfOvBNuEeytM5_lJyh0oQ">
-        <inputs xmi:type="process:ContractInput" xmi:id="_aZ1uIBT5EeymjvkMDqTZ5g" name="agendaHeaderInput" type="COMPLEX" dataReference="agendaHeader">
+        <inputs xmi:type="process:ContractInput" xmi:id="_aZ1uIBT5EeymjvkMDqTZ5g" name="agendaHeaderInput" type="COMPLEX" dataReference="agendaHeaderTPO">
           <inputs xmi:type="process:ContractInput" xmi:id="_aZ1uIRT5EeymjvkMDqTZ5g" name="agendaHeader" type="INTEGER"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_aZ1uIhT5EeymjvkMDqTZ5g" name="agendaDetalle" type="COMPLEX" multiple="true">
             <inputs xmi:type="process:ContractInput" xmi:id="_aZ1uIxT5EeymjvkMDqTZ5g" name="agendaComercialId" type="INTEGER"/>
