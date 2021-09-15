@@ -7,15 +7,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_IKVwaBNPEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_IKVwaRNPEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_IKVwahNPEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_FMEmhxUSEeybM7SAJDSYyw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_FMEmiBUSEeybM7SAJDSYyw" name="agendaComercialAEC" content="agendaComercialAEC" type="TYPE_VARIABLE" returnType="java.util.List">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FMEmiRUSEeybM7SAJDSYyw" name="agendaComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.AgendaComercial"/>
+          <operations xmi:type="expression:Operation" xmi:id="_gacjqxXTEeybM7SAJDSYyw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_gacjrBXTEeybM7SAJDSYyw" name="actividadComercialAEC" content="actividadComercialAEC" type="TYPE_VARIABLE" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_gacjrRXTEeybM7SAJDSYyw" name="actividadComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_FMEmihUSEeybM7SAJDSYyw" name="agendaComercialAECInput" content="def agendaComercialList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;agendaComercialAECInput.each{&#xD;&#xA;&#x9;//Add AgendaComercial instance&#xD;&#xA;&#x9;agendaComercialList.add({ currentAgendaComercialInput ->&#xD;&#xA;&#x9;&#x9;def agendaComercialVar = agendaComercialAEC.find { it.persistenceId.toString() == currentAgendaComercialInput.persistenceId_string} ?: new com.company.model.AgendaComercial()&#xD;&#xA;&#x9;&#x9;agendaComercialVar.agendaComercialId = currentAgendaComercialInput.agendaComercialId&#xD;&#xA;&#x9;&#x9;agendaComercialVar.tipoIdentificacion = currentAgendaComercialInput.tipoIdentificacion&#xD;&#xA;&#x9;&#x9;agendaComercialVar.identificacion = currentAgendaComercialInput.identificacion&#xD;&#xA;&#x9;&#x9;agendaComercialVar.nombres = currentAgendaComercialInput.nombres&#xD;&#xA;&#x9;&#x9;agendaComercialVar.apellidos = currentAgendaComercialInput.apellidos&#xD;&#xA;&#x9;&#x9;agendaComercialVar.aliasAsesor = currentAgendaComercialInput.aliasAsesor&#xD;&#xA;&#x9;&#x9;agendaComercialVar.fecha = currentAgendaComercialInput.fecha&#xD;&#xA;&#x9;&#x9;agendaComercialVar.tipoGestion = currentAgendaComercialInput.tipoGestion&#xD;&#xA;&#x9;&#x9;return agendaComercialVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return agendaComercialList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_FMEmixUSEeybM7SAJDSYyw" name="agendaComercialAECInput" type="COMPLEX" multiple="true"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FMEmjBUSEeybM7SAJDSYyw" name="agendaComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.AgendaComercial"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_gacjrhXTEeybM7SAJDSYyw" name="actividadComercialAECInput" content="def actividadComercialList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;actividadComercialAECInput.each{&#xD;&#xA;&#x9;//Add ActividadComercial instance&#xD;&#xA;&#x9;actividadComercialList.add({ currentActividadComercialInput ->&#xD;&#xA;&#x9;&#x9;def actividadComercialVar = actividadComercialAEC.find { it.persistenceId.toString() == currentActividadComercialInput.persistenceId_string} ?: new com.company.model.ActividadComercial()&#xD;&#xA;&#x9;&#x9;actividadComercialVar.actividadComercialId = currentActividadComercialInput.actividadComercialId&#xD;&#xA;&#x9;&#x9;actividadComercialVar.tipoIdentificacion = currentActividadComercialInput.tipoIdentificacion&#xD;&#xA;&#x9;&#x9;actividadComercialVar.identificacion = currentActividadComercialInput.identificacion&#xD;&#xA;&#x9;&#x9;actividadComercialVar.nombres = currentActividadComercialInput.nombres&#xD;&#xA;&#x9;&#x9;actividadComercialVar.apellidos = currentActividadComercialInput.apellidos&#xD;&#xA;&#x9;&#x9;actividadComercialVar.aliasAsesor = currentActividadComercialInput.aliasAsesor&#xD;&#xA;&#x9;&#x9;actividadComercialVar.fecha = currentActividadComercialInput.fecha&#xD;&#xA;&#x9;&#x9;actividadComercialVar.tipoGestion = currentActividadComercialInput.tipoGestion&#xD;&#xA;&#x9;&#x9;return actividadComercialVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return actividadComercialList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7fvrEBXVEeybM7SAJDSYyw" name="actividadComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_7fvrERXVEeybM7SAJDSYyw" name="actividadComercialAECInput" type="COMPLEX" multiple="true" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_FMEmjRUSEeybM7SAJDSYyw" type="ASSIGNMENT" expression="addAll">
+            <operator xmi:type="expression:Operator" xmi:id="_gacjsRXTEeybM7SAJDSYyw" type="ASSIGNMENT" expression="addAll">
               <inputTypes>java.util.Collection</inputTypes>
             </operator>
           </operations>
@@ -25,22 +25,22 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_IKVwbhNPEeytM5_lJyh0oQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_IKVwbxNPEeytM5_lJyh0oQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_xO2fiRNjEeytM5_lJyh0oQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_PRGVwBUSEeybM7SAJDSYyw" name="agendamientodeldia" content="0b23ce86-f2ae-4aba-8532-b6d0f1ebad47" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_kAmK8BXTEeybM7SAJDSYyw" name="agendamientodeldia" content="a9bc1758-3237-4d02-b013-7385ccb25b9c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_xO2fiBNjEeytM5_lJyh0oQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_FMD_cBUSEeybM7SAJDSYyw" name="agendaComercialAECInput" type="COMPLEX" multiple="true" dataReference="agendaComercialAEC" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMD_cRUSEeybM7SAJDSYyw" name="persistenceId_string" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMD_chUSEeybM7SAJDSYyw" name="agendaComercialId" type="INTEGER" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMD_cxUSEeybM7SAJDSYyw" name="tipoIdentificacion" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMEmgBUSEeybM7SAJDSYyw" name="identificacion" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMEmgRUSEeybM7SAJDSYyw" name="nombres" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMEmghUSEeybM7SAJDSYyw" name="apellidos" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMEmgxUSEeybM7SAJDSYyw" name="aliasAsesor" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMEmhBUSEeybM7SAJDSYyw" name="fecha" type="LOCALDATETIME" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_FMEmhRUSEeybM7SAJDSYyw" name="tipoGestion" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_gacjoBXTEeybM7SAJDSYyw" name="actividadComercialAECInput" type="COMPLEX" multiple="true" dataReference="actividadComercialAEC" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjoRXTEeybM7SAJDSYyw" name="persistenceId_string" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjohXTEeybM7SAJDSYyw" name="actividadComercialId" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjoxXTEeybM7SAJDSYyw" name="tipoIdentificacion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjpBXTEeybM7SAJDSYyw" name="identificacion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjpRXTEeybM7SAJDSYyw" name="nombres" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjphXTEeybM7SAJDSYyw" name="apellidos" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjpxXTEeybM7SAJDSYyw" name="aliasAsesor" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjqBXTEeybM7SAJDSYyw" name="fecha" type="LOCALDATETIME" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_gacjqRXTEeybM7SAJDSYyw" name="tipoGestion" createMode="false"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_FMEmhhUSEeybM7SAJDSYyw" expression="agendaComercialAECInput?.agendaComercialId.flatten().every{it!=null}" errorMessage="agendaComercialId is mandatory for AgendaComercial" name="mandatory_agendaComercialAECInput_agendaComercialId">
-              <inputNames>agendaComercialAECInput</inputNames>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_gacjqhXTEeybM7SAJDSYyw" expression="actividadComercialAECInput?.actividadComercialId.flatten().every{it!=null}" errorMessage="actividadComercialId is mandatory for ActividadComercial" name="mandatory_actividadComercialAECInput_actividadComercialId">
+              <inputNames>actividadComercialAECInput</inputNames>
             </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_xO2fixNjEeytM5_lJyh0oQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -56,26 +56,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_NG3K8hPiEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_NG3K8RPiEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_NG3yABPiEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_ZLFE6hUNEeybM7SAJDSYyw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_ZLFE6xUNEeybM7SAJDSYyw" name="agendaComercialAEC" content="agendaComercialAEC" type="TYPE_VARIABLE" returnType="java.util.List">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZLFE7BUNEeybM7SAJDSYyw" name="agendaComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.AgendaComercial"/>
+          <operations xmi:type="expression:Operation" xmi:id="_roJyOxXTEeybM7SAJDSYyw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_roJyPBXTEeybM7SAJDSYyw" name="actividadComercialAEC" content="actividadComercialAEC" type="TYPE_VARIABLE" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_roJyPRXTEeybM7SAJDSYyw" name="actividadComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_ZLFE7RUNEeybM7SAJDSYyw" name="agendaComercialAECInput" content="def agendaComercialList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;     .each{&#xD;&#xA;&#x9;//Add AgendaComercial instance&#xD;&#xA;&#x9;agendaComercialList.add({ currentAgendaComercialInput ->&#xD;&#xA;&#x9;&#x9;def agendaComercialVar = agendaComercialAEC.find { it.persistenceId.toString() == currentAgendaComercialInput.persistenceId_string} ?: new com.company.model.AgendaComercial()&#xD;&#xA;&#x9;&#x9;agendaComercialVar.agendaComercialId = currentAgendaComercialInput.agendaComercialId&#xD;&#xA;&#x9;&#x9;agendaComercialVar.numeroCuenta = currentAgendaComercialInput.numeroCuenta&#xD;&#xA;&#x9;&#x9;agendaComercialVar.nombre = currentAgendaComercialInput.nombre&#xD;&#xA;&#x9;&#x9;agendaComercialVar.apellido = currentAgendaComercialInput.apellido&#xD;&#xA;&#x9;&#x9;agendaComercialVar.aliasAsesor = currentAgendaComercialInput.aliasAsesor&#xD;&#xA;&#x9;&#x9;agendaComercialVar.fecha = currentAgendaComercialInput.fecha&#xD;&#xA;&#x9;&#x9;agendaComercialVar.tipoGestion = currentAgendaComercialInput.tipoGestion&#xD;&#xA;&#x9;&#x9;return agendaComercialVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return agendaComercialList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ZLFE7xUNEeybM7SAJDSYyw" name="agendaComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.AgendaComercial"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_roJyPhXTEeybM7SAJDSYyw" name="actividadComercialAECInput" content="def actividadComercialList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;actividadComercialAECInput.each{&#xD;&#xA;&#x9;//Add ActividadComercial instance&#xD;&#xA;&#x9;actividadComercialList.add({ currentActividadComercialInput ->&#xD;&#xA;&#x9;&#x9;def actividadComercialVar = actividadComercialAEC.find { it.persistenceId.toString() == currentActividadComercialInput.persistenceId_string} ?: new com.company.model.ActividadComercial()&#xD;&#xA;&#x9;&#x9;actividadComercialVar.actividadComercialId = currentActividadComercialInput.actividadComercialId&#xD;&#xA;&#x9;&#x9;actividadComercialVar.tipoIdentificacion = currentActividadComercialInput.tipoIdentificacion&#xD;&#xA;&#x9;&#x9;actividadComercialVar.identificacion = currentActividadComercialInput.identificacion&#xD;&#xA;&#x9;&#x9;actividadComercialVar.nombres = currentActividadComercialInput.nombres&#xD;&#xA;&#x9;&#x9;actividadComercialVar.apellidos = currentActividadComercialInput.apellidos&#xD;&#xA;&#x9;&#x9;actividadComercialVar.aliasAsesor = currentActividadComercialInput.aliasAsesor&#xD;&#xA;&#x9;&#x9;actividadComercialVar.fecha = currentActividadComercialInput.fecha&#xD;&#xA;&#x9;&#x9;actividadComercialVar.tipoGestion = currentActividadComercialInput.tipoGestion&#xD;&#xA;&#x9;&#x9;return actividadComercialVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return actividadComercialList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SFbegBXWEeybM7SAJDSYyw" name="actividadComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_SFbegRXWEeybM7SAJDSYyw" name="actividadComercialAECInput" type="COMPLEX" multiple="true" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_ZLFE8BUNEeybM7SAJDSYyw" type="ASSIGNMENT" expression="addAll">
-              <inputTypes>java.util.Collection</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_LNFtyxUSEeybM7SAJDSYyw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_LNFtzBUSEeybM7SAJDSYyw" name="agendaComercialAEC" content="agendaComercialAEC" type="TYPE_VARIABLE" returnType="java.util.List">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LNFtzRUSEeybM7SAJDSYyw" name="agendaComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.AgendaComercial"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_LNFtzhUSEeybM7SAJDSYyw" name="agendaComercialAECInput" content="def agendaComercialList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;agendaComercialAECInput.each{&#xD;&#xA;&#x9;//Add AgendaComercial instance&#xD;&#xA;&#x9;agendaComercialList.add({ currentAgendaComercialInput ->&#xD;&#xA;&#x9;&#x9;def agendaComercialVar = agendaComercialAEC.find { it.persistenceId.toString() == currentAgendaComercialInput.persistenceId_string} ?: new com.company.model.AgendaComercial()&#xD;&#xA;&#x9;&#x9;agendaComercialVar.agendaComercialId = currentAgendaComercialInput.agendaComercialId&#xD;&#xA;&#x9;&#x9;agendaComercialVar.tipoIdentificacion = currentAgendaComercialInput.tipoIdentificacion&#xD;&#xA;&#x9;&#x9;agendaComercialVar.identificacion = currentAgendaComercialInput.identificacion&#xD;&#xA;&#x9;&#x9;agendaComercialVar.nombres = currentAgendaComercialInput.nombres&#xD;&#xA;&#x9;&#x9;agendaComercialVar.apellidos = currentAgendaComercialInput.apellidos&#xD;&#xA;&#x9;&#x9;agendaComercialVar.aliasAsesor = currentAgendaComercialInput.aliasAsesor&#xD;&#xA;&#x9;&#x9;agendaComercialVar.fecha = currentAgendaComercialInput.fecha&#xD;&#xA;&#x9;&#x9;agendaComercialVar.tipoGestion = currentAgendaComercialInput.tipoGestion&#xD;&#xA;&#x9;&#x9;return agendaComercialVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return agendaComercialList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_LNFtzxUSEeybM7SAJDSYyw" name="agendaComercialAECInput" type="COMPLEX" multiple="true"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LNFt0BUSEeybM7SAJDSYyw" name="agendaComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.AgendaComercial"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_LNFt0RUSEeybM7SAJDSYyw" type="ASSIGNMENT" expression="addAll">
+            <operator xmi:type="expression:Operator" xmi:id="_roJyQRXTEeybM7SAJDSYyw" type="ASSIGNMENT" expression="addAll">
               <inputTypes>java.util.Collection</inputTypes>
             </operator>
           </operations>
@@ -85,22 +74,22 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_NG3yBRPiEeytM5_lJyh0oQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_NG3yBBPiEeytM5_lJyh0oQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_gnU56RPiEeytM5_lJyh0oQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_Ue4pQBUSEeybM7SAJDSYyw" name="actualizaryaprobar" content="de12f3cd-2dff-4975-a0c3-4a4bd8108070" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_MV36sBXWEeybM7SAJDSYyw" name="actualizaryaprobar" content="fdeff15e-1e04-42ba-941d-37d772769ff0" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_gnU56BPiEeytM5_lJyh0oQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_LNFtwBUSEeybM7SAJDSYyw" name="agendaComercialAECInput" type="COMPLEX" multiple="true" dataReference="agendaComercialAEC" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtwRUSEeybM7SAJDSYyw" name="persistenceId_string" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtwhUSEeybM7SAJDSYyw" name="agendaComercialId" type="INTEGER" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtwxUSEeybM7SAJDSYyw" name="tipoIdentificacion" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtxBUSEeybM7SAJDSYyw" name="identificacion" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtxRUSEeybM7SAJDSYyw" name="nombres" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtxhUSEeybM7SAJDSYyw" name="apellidos" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtxxUSEeybM7SAJDSYyw" name="aliasAsesor" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtyBUSEeybM7SAJDSYyw" name="fecha" type="LOCALDATETIME" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_LNFtyRUSEeybM7SAJDSYyw" name="tipoGestion" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_roJyMBXTEeybM7SAJDSYyw" name="actividadComercialAECInput" type="COMPLEX" multiple="true" dataReference="actividadComercialAEC" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyMRXTEeybM7SAJDSYyw" name="persistenceId_string" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyMhXTEeybM7SAJDSYyw" name="actividadComercialId" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyMxXTEeybM7SAJDSYyw" name="tipoIdentificacion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyNBXTEeybM7SAJDSYyw" name="identificacion" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyNRXTEeybM7SAJDSYyw" name="nombres" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyNhXTEeybM7SAJDSYyw" name="apellidos" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyNxXTEeybM7SAJDSYyw" name="aliasAsesor" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyOBXTEeybM7SAJDSYyw" name="fecha" type="LOCALDATETIME" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_roJyORXTEeybM7SAJDSYyw" name="tipoGestion" createMode="false"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_LNFtyhUSEeybM7SAJDSYyw" expression="agendaComercialAECInput?.agendaComercialId.flatten().every{it!=null}" errorMessage="agendaComercialId is mandatory for AgendaComercial" name="mandatory_agendaComercialAECInput_agendaComercialId">
-              <inputNames>agendaComercialAECInput</inputNames>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_roJyOhXTEeybM7SAJDSYyw" expression="actividadComercialAECInput?.actividadComercialId.flatten().every{it!=null}" errorMessage="actividadComercialId is mandatory for ActividadComercial" name="mandatory_actividadComercialAECInput_actividadComercialId">
+              <inputNames>actividadComercialAECInput</inputNames>
             </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_gnU56xPiEeytM5_lJyh0oQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -111,7 +100,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_O2zekxPiEeytM5_lJyh0oQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_wx1C0BUEEeymjvkMDqTZ5g" name="agendaComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.AgendaComercial">
+      <data xmi:type="process:BusinessObjectData" xmi:id="_wx1C0BUEEeymjvkMDqTZ5g" name="actividadComercialAEC" multiple="true" dataType="_IKVwlBNPEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial">
         <defaultValue xmi:type="expression:Expression" xmi:id="_3bVGYhUEEeymjvkMDqTZ5g" name="" content="" interpreter="GROOVY"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_IKVwdBNPEeytM5_lJyh0oQ" type="NONE">

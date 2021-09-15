@@ -82,6 +82,7 @@
       <title>Mr</title>
       <jobTitle>Human resources benefits</jobTitle>
       <manager>helen.kelly</manager>
+      <personalData/>
       <professionalData>
         <email>walter.bates@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -526,6 +527,48 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
+    <user userName="javier">
+      <firstName>Javier</firstName>
+      <lastName>Lozano</lastName>
+      <title>Sr</title>
+      <manager></manager>
+      <personalData>
+        <email>ing.javierlozano@camilocor.com.co</email>
+      </personalData>
+      <professionalData>
+        <email>ing.javierlozano@camilocor.com.co</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="cristian">
+      <firstName>Cristian</firstName>
+      <lastName>Cortes</lastName>
+      <title>Sr</title>
+      <manager></manager>
+      <personalData>
+        <email>ccamilo.cortes@camilocor.com.co</email>
+      </personalData>
+      <professionalData>
+        <email>ccamilo.cortes@camilocor.com.co</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="camilo">
+      <firstName>Camilo</firstName>
+      <lastName>Cortes</lastName>
+      <title>Sr</title>
+      <manager></manager>
+      <personalData>
+        <email>cricor12@camilocor.com.co</email>
+      </personalData>
+      <professionalData>
+        <email>cricor12@camilocor.com.co</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -534,190 +577,211 @@
     </role>
   </roles>
   <groups>
-    <group name="acme">
-      <displayName>Acme</displayName>
-      <description>This group represents the acme department of the ACME organization</description>
+    <group name="porvenir">
+      <displayName>Porvenir</displayName>
+      <description>This group represents the acme department of the Porvenir organization</description>
     </group>
-    <group name="hr" parentPath="/acme">
+    <group name="hr" parentPath="/porvenir">
       <displayName>Human Resources</displayName>
       <description>This group represents the human resources department of the ACME organization</description>
     </group>
-    <group name="finance" parentPath="/acme">
+    <group name="finance" parentPath="/porvenir">
       <displayName>Finance</displayName>
       <description>This group represents the finance department of the ACME organization</description>
     </group>
-    <group name="it" parentPath="/acme">
+    <group name="it" parentPath="/porvenir">
       <displayName>Infrastructure</displayName>
       <description>This group represents the infrastructure department of the ACME organization</description>
     </group>
-    <group name="marketing" parentPath="/acme">
+    <group name="marketing" parentPath="/porvenir">
       <displayName>Marketing</displayName>
       <description>This group represents the marketing department of the ACME organization</description>
     </group>
-    <group name="production" parentPath="/acme">
+    <group name="production" parentPath="/porvenir">
       <displayName>Production</displayName>
       <description>This group represents the production department of the ACME organization</description>
     </group>
-    <group name="sales" parentPath="/acme">
+    <group name="sales" parentPath="/porvenir">
       <displayName>Sales</displayName>
       <description>This group represents the sales department of the ACME organization</description>
     </group>
-    <group name="europe" parentPath="/acme/sales">
+    <group name="europe" parentPath="/porvenir/sales">
       <displayName>Europe</displayName>
       <description>This group represents the europe department of the ACME organization</description>
     </group>
-    <group name="asia" parentPath="/acme/sales">
+    <group name="asia" parentPath="/porvenir/sales">
       <displayName>Asia</displayName>
       <description>This group represents the asia department of the ACME organization</description>
     </group>
-    <group name="latin_america" parentPath="/acme/sales">
+    <group name="latin_america" parentPath="/porvenir/sales">
       <displayName>Latin America</displayName>
       <description>This group represents the latin america department of the ACME organization</description>
     </group>
-    <group name="north_america" parentPath="/acme/sales">
+    <group name="north_america" parentPath="/porvenir/sales">
       <displayName>North America</displayName>
       <description>This group represents the north america department of the ACME organization</description>
     </group>
-    <group name="rd" parentPath="/acme/production">
+    <group name="rd" parentPath="/porvenir/production">
       <displayName>Research &amp; Development</displayName>
       <description>This group represents the research &amp; development department of the ACME organization</description>
     </group>
-    <group name="services" parentPath="/acme/production">
+    <group name="services" parentPath="/porvenir/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
     </group>
-    <group name="viceCliOpe">
-      <displayName>Vicepresidencia de clientes y operaciones</displayName>
+    <group name="viceComer" parentPath="/porvenir">
+      <displayName>Vicepresidencia comercial</displayName>
     </group>
-    <group name="DirCliOpe" parentPath="/viceCliOpe">
-      <displayName>Dirección de Clientes y Operaciones</displayName>
+    <group name="dirComer" parentPath="/porvenir/viceComer">
+      <displayName>Dirección Comercial</displayName>
+    </group>
+    <group name="aseComer" parentPath="/porvenir/viceComer/dirComer">
+      <displayName>Asesoría Comercial</displayName>
     </group>
   </groups>
   <memberships>
     <membership>
       <userName>william.jobs</userName>
       <roleName>member</roleName>
-      <groupName>acme</groupName>
+      <groupName>porvenir</groupName>
     </membership>
     <membership>
       <userName>april.sanchez</userName>
       <roleName>member</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>helen.kelly</userName>
       <roleName>member</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>walter.bates</userName>
       <roleName>member</roleName>
       <groupName>hr</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>zachary.williamson</userName>
       <roleName>member</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>patrick.gardenier</userName>
       <roleName>member</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>virginie.jomphe</userName>
       <roleName>member</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>thorsten.hartmann</userName>
       <roleName>member</roleName>
       <groupName>finance</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>jan.fisher</userName>
       <roleName>member</roleName>
       <groupName>it</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>isabel.bleasdale</userName>
       <roleName>member</roleName>
       <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>favio.riviera</userName>
       <roleName>member</roleName>
       <groupName>marketing</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>michael.morrison</userName>
       <roleName>member</roleName>
       <groupName>production</groupName>
-      <groupParentPath>/acme</groupParentPath>
+      <groupParentPath>/porvenir</groupParentPath>
     </membership>
     <membership>
       <userName>marc.marseau</userName>
       <roleName>member</roleName>
       <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/porvenir/production</groupParentPath>
     </membership>
     <membership>
       <userName>joseph.hovell</userName>
       <roleName>member</roleName>
       <groupName>rd</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/porvenir/production</groupParentPath>
     </membership>
     <membership>
       <userName>mauro.zetticci</userName>
       <roleName>member</roleName>
       <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/porvenir/production</groupParentPath>
     </membership>
     <membership>
       <userName>thomas.wallis</userName>
       <roleName>member</roleName>
       <groupName>services</groupName>
-      <groupParentPath>/acme/production</groupParentPath>
+      <groupParentPath>/porvenir/production</groupParentPath>
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
       <roleName>member</roleName>
       <groupName>europe</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/porvenir/sales</groupParentPath>
     </membership>
     <membership>
       <userName>misa.kumagai</userName>
       <roleName>member</roleName>
       <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/porvenir/sales</groupParentPath>
     </membership>
     <membership>
       <userName>norio.yamazaki</userName>
       <roleName>member</roleName>
       <groupName>asia</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/porvenir/sales</groupParentPath>
     </membership>
     <membership>
       <userName>giovanna.almeida</userName>
       <roleName>member</roleName>
       <groupName>latin_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/porvenir/sales</groupParentPath>
     </membership>
     <membership>
       <userName>anthony.nichols</userName>
       <roleName>member</roleName>
       <groupName>north_america</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupParentPath>/porvenir/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>javier</userName>
+      <roleName>member</roleName>
+      <groupName>aseComer</groupName>
+      <groupParentPath>/porvenir/viceComer/dirComer</groupParentPath>
+    </membership>
+    <membership>
+      <userName>cristian</userName>
+      <roleName>member</roleName>
+      <groupName>aseComer</groupName>
+      <groupParentPath>/porvenir/viceComer/dirComer</groupParentPath>
+    </membership>
+    <membership>
+      <userName>camilo</userName>
+      <roleName>member</roleName>
+      <groupName>aseComer</groupName>
+      <groupParentPath>/porvenir/viceComer/dirComer</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
