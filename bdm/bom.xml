@@ -4,21 +4,27 @@
         <businessObject qualifiedName="com.company.model.AgendaComercial">
             <fields>
                 <field type="INTEGER" length="255" name="agendaComercialId" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="numeroCuenta" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="nombre" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="apellido" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipoIdentificacion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="identificacion" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombres" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="apellidos" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="aliasAsesor" nullable="true" collection="false">
                     <description></description>
                 </field>
                 <field type="LOCALDATETIME" length="255" name="fecha" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="tipoGestion" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="fechaNacimiento" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="requiereDobleAsesoria" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="resultadoDobleAsesoria" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="resultadoViabilidad" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="regimen" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="tiempoAfiliacion" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="identificacion" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="tipoIdentificacion" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="sexo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="respuestaCliente" nullable="true" collection="false">
+                    <description>En el telemercadeo al interactuar con el cliente:&#13;
+- Demuestra interes&#13;
+- No demuestra interes&#13;
+- No responde</description>
+                </field>
             </fields>
             <uniqueConstraints/>
             <queries/>
