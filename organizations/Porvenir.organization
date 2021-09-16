@@ -183,6 +183,7 @@
       <title>Mr</title>
       <jobTitle>Financial planning manager</jobTitle>
       <manager>zachary.williamson</manager>
+      <personalData/>
       <professionalData>
         <email>thorsten.hartmann@acme.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
@@ -569,6 +570,27 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="robot">
+      <firstName>robot</firstName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="directorcomercial">
+      <firstName>Camilo</firstName>
+      <lastName>Prias</lastName>
+      <manager></manager>
+      <personalData>
+        <email>directorcomercial@camilocor.com.co</email>
+      </personalData>
+      <professionalData>
+        <email>directorcomercial@camilocor.com.co</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -637,6 +659,9 @@
     </group>
     <group name="aseComer" parentPath="/porvenir/viceComer/dirComer">
       <displayName>Asesoría Comercial</displayName>
+    </group>
+    <group name="robot" parentPath="/porvenir/viceComer/dirComer">
+      <displayName>Robot</displayName>
     </group>
   </groups>
   <memberships>
@@ -782,6 +807,18 @@
       <roleName>member</roleName>
       <groupName>aseComer</groupName>
       <groupParentPath>/porvenir/viceComer/dirComer</groupParentPath>
+    </membership>
+    <membership>
+      <userName>robot</userName>
+      <roleName>member</roleName>
+      <groupName>robot</groupName>
+      <groupParentPath>/porvenir/viceComer/dirComer</groupParentPath>
+    </membership>
+    <membership>
+      <userName>directorcomercial</userName>
+      <roleName>member</roleName>
+      <groupName>dirComer</groupName>
+      <groupParentPath>/porvenir/viceComer</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

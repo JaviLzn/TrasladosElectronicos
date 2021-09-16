@@ -91,12 +91,12 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_bImW8BUMEeybM7SAJDSYyw" name="actividadComercial" multiple="true" dataType="_Ddf1vhNuEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_GYbzRxXTEeybM7SAJDSYyw" name="initActividadComercial()" content="def actividadComercialList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;actividadComercialInput.each{&#xD;&#xA;&#x9;//Add a new composed ActividadComercial instance&#xD;&#xA;&#x9;actividadComercialList.add({ currentActividadComercialInput ->&#xD;&#xA;&#x9;&#x9;def actividadComercialVar = new com.company.model.ActividadComercial()&#xD;&#xA;&#x9;&#x9;actividadComercialVar.actividadComercialId = currentActividadComercialInput.actividadComercialId&#xD;&#xA;&#x9;&#x9;actividadComercialVar.tipoIdentificacion = currentActividadComercialInput.tipoIdentificacion&#xD;&#xA;&#x9;&#x9;actividadComercialVar.identificacion = currentActividadComercialInput.identificacion&#xD;&#xA;&#x9;&#x9;actividadComercialVar.nombres = currentActividadComercialInput.nombres&#xD;&#xA;&#x9;&#x9;actividadComercialVar.apellidos = currentActividadComercialInput.apellidos&#xD;&#xA;&#x9;&#x9;return actividadComercialVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return actividadComercialList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="__ynQABY5EeybM7SAJDSYyw" name="actividadComercialInput" type="COMPLEX" multiple="true"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_2M3Q8xbtEeyRxr75KeBNDg" name="initActividadComercial()" content="def actividadComercialList = []&#xD;&#xA;//For each item collected in multiple input&#xD;&#xA;listadoProspectos.each{&#xD;&#xA;&#x9;//Add a new composed ActividadComercial instance&#xD;&#xA;&#x9;actividadComercialList.add({ currentActividadComercialInput ->&#xD;&#xA;&#x9;&#x9;def actividadComercialVar = new com.company.model.ActividadComercial()&#xD;&#xA;&#x9;&#x9;actividadComercialVar.identificacion = currentActividadComercialInput.identificacion&#xD;&#xA;&#x9;&#x9;return actividadComercialVar&#xD;&#xA;&#x9;}(it))&#xD;&#xA;}&#xD;&#xA;return actividadComercialList" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_2M3Q9BbtEeyRxr75KeBNDg" name="listadoProspectos" type="COMPLEX" multiple="true"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_DdfOtBNuEeytM5_lJyh0oQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_U7svgBZvEeybM7SAJDSYyw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ahlxcBalEeyRxr75KeBNDg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_DdfOthNuEeytM5_lJyh0oQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_DdfOtxNuEeytM5_lJyh0oQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -119,15 +119,11 @@
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_DdfOuxNuEeytM5_lJyh0oQ" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_DdfOvBNuEeytM5_lJyh0oQ">
-        <inputs xmi:type="process:ContractInput" xmi:id="_GYbzQBXTEeybM7SAJDSYyw" name="actividadComercialInput" type="COMPLEX" multiple="true" dataReference="actividadComercial">
-          <inputs xmi:type="process:ContractInput" xmi:id="_GYbzQRXTEeybM7SAJDSYyw" name="actividadComercialId" type="INTEGER"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_GYbzQhXTEeybM7SAJDSYyw" name="tipoIdentificacion"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_GYbzQxXTEeybM7SAJDSYyw" name="identificacion"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_GYbzRBXTEeybM7SAJDSYyw" name="nombres"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_GYbzRRXTEeybM7SAJDSYyw" name="apellidos"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_2M3Q8BbtEeyRxr75KeBNDg" name="listadoProspectos" type="COMPLEX" multiple="true" dataReference="actividadComercial">
+          <inputs xmi:type="process:ContractInput" xmi:id="_2M3Q8RbtEeyRxr75KeBNDg" name="identificacion"/>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_GYbzRhXTEeybM7SAJDSYyw" expression="actividadComercialInput?.actividadComercialId.flatten().every{it!=null}" errorMessage="actividadComercialId is mandatory for ActividadComercial" name="mandatory_actividadComercialTPOInput_actividadComercialId">
-          <inputNames>actividadComercialInput</inputNames>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_2M3Q8hbtEeyRxr75KeBNDg" expression="listadoProspectos?.identificacion.flatten().every{it!=null}" errorMessage="identificacion is mandatory for ActividadComercial" name="mandatory_listadoProspectos_identificacion">
+          <inputNames>listadoProspectos</inputNames>
         </constraints>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_DdfOvRNuEeytM5_lJyh0oQ">
