@@ -1247,13 +1247,13 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_yEfcMBUSEeybM7SAJDSYyw" name="No muestra interés" target="_yEbKwBUSEeybM7SAJDSYyw" source="_RBkYYBUTEeybM7SAJDSYyw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_yEfcMRUSEeybM7SAJDSYyw"/>
         <condition xmi:type="expression:Expression" xmi:id="_yEfcMhUSEeybM7SAJDSYyw" name="respuestaNoInteres()" content="actividadComercial.respuestaCliente == &quot;No muestra interés&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_QKxuMBcfEeyRxr75KeBNDg" name="actividadComercial" dataType="_01L2VBPpEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_XS4XcBgeEeytHK9LlkfOVg" name="actividadComercial" dataType="_01L2VBPpEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_zC-dsBUSEeybM7SAJDSYyw" name="No contesta" target="_zC3wABUSEeybM7SAJDSYyw" source="_RBkYYBUTEeybM7SAJDSYyw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_zC-dsRUSEeybM7SAJDSYyw"/>
         <condition xmi:type="expression:Expression" xmi:id="_zC-dshUSEeybM7SAJDSYyw" name="respuestaNoContesta()" content="actividadComercial.respuestaCliente == &quot;No contesta&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_5kgOoBdPEeyg8LSAlRqsgA" name="actividadComercial" dataType="_01L2VBPpEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ra_8QBgeEeytHK9LlkfOVg" name="actividadComercial" dataType="_01L2VBPpEeytM5_lJyh0oQ" className="com.company.model.ActividadComercial"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_g7naQBUTEeybM7SAJDSYyw" target="_w8pP0BXBEeybM7SAJDSYyw" source="_zC3wABUSEeybM7SAJDSYyw">

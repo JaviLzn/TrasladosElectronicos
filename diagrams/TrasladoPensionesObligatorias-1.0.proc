@@ -96,7 +96,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_DdfOtBNuEeytM5_lJyh0oQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ahlxcBalEeyRxr75KeBNDg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_fkrDABdkEeyRxr75KeBNDg" name="traslados" content="0f3691fd-ff59-4489-93c9-b199e7b4766e" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_DdfOthNuEeytM5_lJyh0oQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_DdfOtxNuEeytM5_lJyh0oQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
