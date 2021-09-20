@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.0",
-  "id" : "ConsultarViabilidad",
-  "name" : "ConsultarViabilidad",
-  "lastUpdate" : 1632019323046,
+  "id" : "visitarCliente",
+  "name" : "visitarCliente",
+  "lastUpdate" : 1631933557643,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9b470348-2231-42d9-b8ca-099068d50d74",
+        "reference" : "068e6db1-ac61-482c-a476-d945d6ab55fa",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "8efa65e6-f7b3-4a06-b465-3d2b1ee55431",
+              "reference" : "986f621c-647f-488e-8497-cddaa02305d5",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -66,11 +66,11 @@
                 "lg" : 12
               },
               "propertyValues" : {
-                "labelHidden" : {
+                "allowHtml" : {
                   "type" : "constant",
                   "value" : true
                 },
-                "allowHtml" : {
+                "labelHidden" : {
                   "type" : "constant",
                   "value" : true
                 },
@@ -82,12 +82,12 @@
                   "type" : "constant",
                   "value" : ""
                 },
+                "label" : {
+                  "type" : "interpolation"
+                },
                 "text" : {
                   "type" : "interpolation",
                   "value" : "{{ task.displayDescription }}"
-                },
-                "label" : {
-                  "type" : "interpolation"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "102f802f-f038-4aa1-85b3-a6c0aba81874",
+              "reference" : "cfa9cfff-9c8d-4d90-9faa-7b51cdcb3b15",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "8e40df0e-f5e9-4fe3-8103-690d30696b8c",
+        "reference" : "87ee0185-cfe2-40d0-9d6c-37ecf586382f",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "da133d53-bfb4-47ff-860c-5f76ac530d9d",
+          "reference" : "e805d32c-1a88-4b9c-a108-c7fcbe002dfa",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a93c9bd6-f5d1-410e-9798-4778314f4ca9",
+                "reference" : "1c70b0fb-f7da-483e-a94c-27f3d46d3f09",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "583b4763-e10f-492c-ac9c-9f8dbe7e210c",
+                "reference" : "b84f985e-a129-43e9-9d82-fbb40f1cccf2",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -208,13 +208,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -224,13 +224,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.identificacion}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Identificacion"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.identificacion}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -241,7 +241,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "5ee68bb2-32c3-4a73-96d2-cedfc1620912",
+                      "reference" : "558cd791-9549-4323-a28b-5d840cd50cb1",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -257,13 +257,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -273,13 +273,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.nombres}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Nombres"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.nombres}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -290,7 +290,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "33ba5082-6263-458b-8a72-47ad155c89a8",
+                      "reference" : "f959fe4f-bc5c-4463-91cd-4c85d5d9df57",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -306,13 +306,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -322,13 +322,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.apellidos}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Apellidos"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.apellidos}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -339,7 +339,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "9ced802a-b26a-483f-b0e8-803e2382bbe2",
+                      "reference" : "dcaa0ec2-cf64-4613-ad57-bfea3cc9c6f0",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -355,13 +355,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -371,13 +371,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.aliasAsesor}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Alias Asesor"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.aliasAsesor}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -388,7 +388,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "b55d27cf-ffbf-4e6d-a3a3-af383640254a",
+                      "reference" : "a6b1ad7b-5fc6-4603-9cd1-5acbfe591bde",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -404,13 +404,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -420,13 +420,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.fecha|uiDate}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Fecha"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.fecha|uiDate}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -437,7 +437,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "b5e6e450-e1e4-4229-abc5-ee833f25acd7",
+                      "reference" : "22e62959-166e-4b5b-af29-660be606d37d",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -453,13 +453,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -469,13 +469,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.tipoGestion}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Tipo Gestion"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.tipoGestion}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -486,7 +486,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "a4244144-49fe-47c4-8845-3802f0f25c0b",
+                      "reference" : "924107b8-a301-4427-899c-80bd28f4e97b",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -502,13 +502,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -518,13 +518,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.fechaNacimiento}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Fecha Nacimiento"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.fechaNacimiento}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -535,7 +535,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "9005e113-89c6-4386-adaa-cb6090af2eaf",
+                      "reference" : "956073ab-eb49-423a-b3a7-d9297e8be514",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -551,57 +551,42 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!actividadComercial.regimen"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Regimen"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.regimen}}"
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "actividadComercial.regimen"
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "26373e34-f95f-4920-a7c6-6c1b575d59d1",
+                      "reference" : "86a9861d-9f90-46b8-95e1-efe5f798f11d",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -615,57 +600,42 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!actividadComercial.tiempoAfiliacion"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Tiempo Afiliacion"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.tiempoAfiliacion}}"
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "actividadComercial.tiempoAfiliacion"
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "535053a5-b7c5-41e3-abfb-8c76f2576679",
+                      "reference" : "485fc59c-710f-4ee7-bf7b-8e494874e848",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -679,13 +649,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -695,13 +665,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.sexo}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Sexo"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.sexo}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -712,7 +682,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "1aeacf56-7969-4bb7-8bda-d1b355badc94",
+                      "reference" : "c88b1ef2-13b2-4b29-83bf-0d630f8c2240",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -728,13 +698,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -744,13 +714,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.respuestaCliente}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Respuesta Cliente"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.respuestaCliente}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -761,7 +731,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "06856f56-c652-4070-a6da-1ae31af4ff89",
+                      "reference" : "58480c3f-c889-408f-8cb7-4f897109d5ae",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -777,13 +747,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -793,13 +763,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.resultadoViabilidad}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Resultado Viabilidad"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.resultadoViabilidad}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -810,7 +780,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "fc7a41d4-80b3-42fa-aae1-0c3c87c6253f",
+                      "reference" : "adefb4f3-ce24-4488-afed-b2da3c5f87e4",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -826,13 +796,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -842,13 +812,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.resultadoDobleAsesoria}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Resultado Doble Asesoria"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.resultadoDobleAsesoria}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -859,7 +829,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "005bba21-3880-4c0d-9eb4-aeadff818cb5",
+                      "reference" : "b0ecf049-1779-4daf-bcf8-10d722237f1f",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -875,13 +845,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -891,13 +861,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.alternativaSeleccionada}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Alternativa Seleccionada"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.alternativaSeleccionada}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -908,7 +878,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "ac91b579-099b-4b21-96c9-55a20b1adfe9",
+                      "reference" : "fb4f36d8-5b21-4304-a54f-f93813cc8c4a",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -924,13 +894,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -940,13 +910,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.solicitudInmediata}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Solicitud Inmediata"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.solicitudInmediata}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -957,7 +927,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "87fcd3e5-61a8-4eb0-a879-d559f6a4c79b",
+                      "reference" : "e37d3e5a-ac4d-4cdf-8e2e-4b8670f30904",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -977,38 +947,53 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!actividadComercial.solicitudRegistrada"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.solicitudRegistrada}}"
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Solicitud Registrada"
                         },
-                        "alignment" : {
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "actividadComercial.solicitudRegistrada"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "f672ece9-036a-49bc-b037-c03c7e91a539",
+                      "reference" : "4b0835fe-b00f-4b63-9930-29f8136b3c72",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -1022,13 +1007,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -1038,13 +1023,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.email}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Email"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.email}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -1055,7 +1040,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "2dc70f3d-8942-4577-a940-d585947195c6",
+                      "reference" : "2fadb051-5535-4067-a5f8-1ba728b0eabb",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -1071,13 +1056,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -1087,13 +1072,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.direccion}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Direccion"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.direccion}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -1104,7 +1089,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "2df8246e-ad5f-4951-bd64-eb897fca24a2",
+                      "reference" : "c782064c-3e06-44bd-8306-834513e28b26",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -1120,13 +1105,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -1136,13 +1121,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.telefono}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Telefono"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.telefono}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -1153,7 +1138,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "339b9bbb-687b-42f6-92cb-557640dd646a",
+                      "reference" : "054abbc7-7b05-4eb5-a51c-ef7b3c09448b",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -1169,13 +1154,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -1185,13 +1170,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.fechaOportunidad}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Fecha Oportunidad"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.fechaOportunidad}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -1202,7 +1187,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "dbfedb8b-9e14-4d3c-bd6d-945bd883cf50",
+                      "reference" : "19a92f8b-c349-4085-b3f2-d1f4a92dc58b",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -1218,13 +1203,13 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "allowHtml" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
@@ -1234,62 +1219,13 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{actividadComercial.salario}}"
-                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Salario"
                         },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "e72e69cc-1a4c-4ded-b5d5-1fe87ef11527",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!actividadComercial.fechaVisita"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{actividadComercial.fechaVisita}}"
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Fecha Visita"
+                          "value" : "{{actividadComercial.salario}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -1300,7 +1236,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "31dd98ae-9ee1-4594-b0e1-46251bd2218b",
+                      "reference" : "5f949361-52e2-4671-9a58-aa75ba79afaf",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -1350,22 +1286,22 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
                     "value" : "/bonita"
                   },
-                  "collectionPosition" : {
-                    "type" : "constant"
-                  },
-                  "valueToAdd" : {
-                    "type" : "expression"
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
                   },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "Submit task"
+                  "valueToAdd" : {
+                    "type" : "expression"
                   },
                   "disabled" : {
                     "type" : "expression",
@@ -1380,7 +1316,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "41c6cf15-c98d-4a57-9c76-72b6348e0298",
+                "reference" : "72d50c64-33df-4a52-91df-bb89311cafb1",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1400,11 +1336,11 @@
                     "type" : "constant",
                     "value" : true
                   },
-                  "labelHidden" : {
+                  "allowHtml" : {
                     "type" : "constant",
                     "value" : true
                   },
-                  "allowHtml" : {
+                  "labelHidden" : {
                     "type" : "constant",
                     "value" : true
                   },
@@ -1416,12 +1352,12 @@
                     "type" : "constant",
                     "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
                   },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
                   "text" : {
                     "type" : "interpolation",
                     "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
-                  },
-                  "label" : {
-                    "type" : "interpolation"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1432,7 +1368,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "22b0ae8b-e0d6-4e11-8dc7-e10adc80f469",
+                "reference" : "0f5ddc93-11e8-42fb-acef-e5fe4e4ee4e5",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1445,14 +1381,14 @@
   ],
   "assets" : [
     {
-      "id" : "ad147094-42ca-4a6c-9d91-5f4407855504",
+      "id" : "a571b131-0a11-44ee-a96a-a42bfbf6bab8",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "44413db6-b9a6-4f9c-86b5-0fee9cfe54c9",
+      "id" : "b48b87de-0390-4cf6-b452-d69263cde7fc",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -1490,8 +1426,7 @@
         "\treturn {",
         "\t\t//map actividadComercial variable to expected task contract input",
         "\t\tregistroActividad: {",
-        "\t\t\tregimen: $data.actividadComercial.regimen !== undefined ? $data.actividadComercial.regimen : null,",
-        "\t\t\ttiempoAfiliacion: $data.actividadComercial.tiempoAfiliacion !== undefined ? $data.actividadComercial.tiempoAfiliacion : null",
+        "\t\t\tsolicitudRegistrada: $data.actividadComercial.solicitudRegistrada !== undefined ? $data.actividadComercial.solicitudRegistrada : null",
         "\t\t}",
         "\t}",
         "}"
@@ -1521,7 +1456,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "affe58f1-b59c-4edf-abbe-b677f3943315",
+  "uuid" : "c0bca285-aa3f-4b3a-baff-9476edc9df5e",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

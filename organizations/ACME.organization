@@ -593,6 +593,20 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="analistaope">
+      <firstName>Angela</firstName>
+      <lastName>Fuentes</lastName>
+      <title>Sra</title>
+      <manager></manager>
+      <personalData>
+        <email>angela.fuentes@camilocor.com.co</email>
+      </personalData>
+      <professionalData>
+        <email>angela.fuentes@camilocor.com.co</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -664,6 +678,15 @@
     </group>
     <group name="robot" parentPath="/porvenir/viceComer/dirComer">
       <displayName>Robot</displayName>
+    </group>
+    <group name="viceOpe" parentPath="/porvenir">
+      <displayName>Vicepresidencia de operaciones</displayName>
+    </group>
+    <group name="dirOpe" parentPath="/porvenir/viceOpe">
+      <displayName>Direccion de Operaciones</displayName>
+    </group>
+    <group name="analistaOpe" parentPath="/porvenir/viceOpe/dirOpe">
+      <displayName>Analista de Operaciones</displayName>
     </group>
   </groups>
   <memberships>
@@ -821,6 +844,12 @@
       <roleName>member</roleName>
       <groupName>dirComer</groupName>
       <groupParentPath>/porvenir/viceComer</groupParentPath>
+    </membership>
+    <membership>
+      <userName>analistaope</userName>
+      <roleName>member</roleName>
+      <groupName>analistaOpe</groupName>
+      <groupParentPath>/porvenir/viceOpe/dirOpe</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

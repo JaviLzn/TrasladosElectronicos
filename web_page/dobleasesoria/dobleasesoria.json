@@ -1,9 +1,112 @@
 {
   "modelVersion" : "2.0",
-  "id" : "traslados",
-  "name" : "traslados",
-  "lastUpdate" : 1631849412293,
+  "id" : "dobleasesoria",
+  "name" : "dobleasesoria",
+  "lastUpdate" : 1632090276773,
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "b5e8886f-11af-4f61-8118-c39be88f7d74",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "788f6d11-dbea-4910-8108-82faf744782b",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "ff73d57c-287d-4bcd-ae81-7dc9baa6c6cb",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
@@ -11,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "f57b35f8-444a-41db-9f44-cc13577f997d",
+        "reference" : "b18e7c68-f7ab-4360-9e5e-2b3ecdad6bd3",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -20,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "fd3a364b-0726-49f9-ae33-4e995686f515",
+          "reference" : "e71805e6-f446-41d6-936f-c7c355a547f3",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -59,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e954427c-dc87-4d05-a786-7bb200dd221e",
+                "reference" : "b4573b36-7b9f-48c6-a785-22dac851875a",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -76,8 +179,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : "formInput.listadoProspectos"
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -92,10 +194,71 @@
                     "value" : 12
                   }
                 },
-                "reference" : "40f879e9-4bf8-4aca-8f98-069b14605854",
+                "reference" : "fe5bc50d-266a-4183-b476-568ee4201146",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!actividadComercial.identificacion"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{actividadComercial.identificacion}}"
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Identificacion"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        }
+                      },
+                      "reference" : "b9af95fd-8080-449c-8f7d-7dbbdb2beeab",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
                   [
                     {
                       "type" : "component",
@@ -122,192 +285,63 @@
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
                         "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Identificacion"
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
                         },
                         "placeholder" : {
                           "type" : "constant"
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Resultado Doble Asesoria"
                         },
                         "type" : {
                           "type" : "constant",
                           "value" : "text"
                         },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "actividadComercial.resultadoDobleAsesoria"
+                        },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "$item.identificacion"
-                        },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "8d1e96f4-c950-4e54-8d74-de305f4a2c7e",
+                      "reference" : "a2a27673-f448-485e-9b18-2a850d3128c5",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
                     }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "removeItem" : {
-                          "type" : "variable",
-                          "value" : "$item"
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "buttonStyle" : {
-                          "type" : "constant",
-                          "value" : "danger"
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-remove\"></span>"
-                        },
-                        "dataToSend" : {
-                          "type" : "expression"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "collectionPosition" : {
-                          "type" : "constant",
-                          "value" : "Item"
-                        },
-                        "targetUrlOnSuccess" : {
-                          "type" : "interpolation"
-                        },
-                        "action" : {
-                          "type" : "constant",
-                          "value" : "Remove from collection"
-                        },
-                        "collectionToModify" : {
-                          "type" : "variable",
-                          "value" : "$collection"
-                        },
-                        "valueToAdd" : {
-                          "type" : "expression"
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "right"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "cc2680fd-db88-47c7-bb35-b1472e5c50d7",
-                      "hasValidationError" : false,
-                      "id" : "pbButton",
-                      "description" : ""
-                    }
                   ]
                 ]
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "removeItem" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "buttonStyle" : {
-                    "type" : "constant",
-                    "value" : "primary"
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add ActividadComercial"
-                  },
-                  "dataToSend" : {
-                    "type" : "expression"
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "collectionPosition" : {
-                    "type" : "constant"
-                  },
-                  "targetUrlOnSuccess" : {
-                    "type" : "interpolation"
-                  },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "Add to collection"
-                  },
-                  "collectionToModify" : {
-                    "type" : "variable",
-                    "value" : "formInput.listadoProspectos"
-                  },
-                  "valueToAdd" : {
-                    "type" : "expression",
-                    "value" : "{\r\n  \"identificacion\" : \"\"\r\n}"
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "ca18f5a4-55b8-4fd0-bc35-3019a5a289a8",
-                "hasValidationError" : false,
-                "id" : "pbButton",
-                "description" : ""
               }
             ],
             [
@@ -351,22 +385,22 @@
                     "type" : "constant",
                     "value" : false
                   },
-                  "collectionPosition" : {
-                    "type" : "constant"
-                  },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
                     "value" : "/bonita"
                   },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "Start process"
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
                   },
-                  "valueToAdd" : {
-                    "type" : "expression"
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
                   },
                   "disabled" : {
                     "type" : "expression",
@@ -381,7 +415,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "649d74ac-c5a0-4d3d-9e2e-fcd772543f27",
+                "reference" : "e9360007-afb5-4a89-93ed-d46e2e633a56",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -401,11 +435,11 @@
                     "type" : "constant",
                     "value" : true
                   },
-                  "allowHtml" : {
+                  "labelHidden" : {
                     "type" : "constant",
                     "value" : true
                   },
-                  "labelHidden" : {
+                  "allowHtml" : {
                     "type" : "constant",
                     "value" : true
                   },
@@ -417,12 +451,12 @@
                     "type" : "constant",
                     "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
                   },
-                  "label" : {
-                    "type" : "interpolation"
-                  },
                   "text" : {
                     "type" : "interpolation",
                     "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -433,7 +467,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a9c9f031-e010-44fd-9b05-a9e0b57f1345",
+                "reference" : "efdc393b-2fb5-4cd9-aa9a-8303d6ca4c82",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -446,14 +480,14 @@
   ],
   "assets" : [
     {
-      "id" : "e78259bc-99ce-44a8-bf70-02e8086b529a",
+      "id" : "f40db92d-d639-4b14-8d31-b65b6ffb6146",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "4bc7b171-ddef-4261-97c3-d543de138eb7",
+      "id" : "6e21ae5b-7a2a-4b88-a897-6b9c5473d6b5",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -462,12 +496,10 @@
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
+    "task" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \"listadoProspectos\" : [ ]\r",
-        "}"
+        "../API/bpm/userTask/{{taskId}}"
       ],
       "exposed" : false
     },
@@ -489,15 +521,41 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tlistadoProspectos: $data.formInput.listadoProspectos",
+        "if( $data.actividadComercial ){",
+        "\treturn {",
+        "\t\t//map actividadComercial variable to expected task contract input",
+        "\t\tactividadComercialInput: {",
+        "\t\t\tresultadoDobleAsesoria: $data.actividadComercial.resultadoDobleAsesoria !== undefined ? $data.actividadComercial.resultadoDobleAsesoria : null",
+        "\t\t}",
+        "\t}",
         "}"
+      ],
+      "exposed" : false
+    },
+    "actividadComercial" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.actividadComercial_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "307f828d-d44a-46e5-96d3-e8595e1b17f9",
+  "uuid" : "2c2efdb5-1d34-49aa-8ec6-ba57ef9fb64c",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
